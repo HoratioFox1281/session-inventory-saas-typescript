@@ -1,6 +1,6 @@
 # Let a SaaS admin see and end other sessions
 
-The example makes one concrete decision: after a tenant owner signs in, the service lists that user's sessions and revokes every session except the one identified by the current request. Infrai is called with one key from the environment, and the same small HTTP client handles onboarding and session operations.
+This sample solves a specific problem: after a tenant owner signs in, list their sessions and revoke all but the current request's session. Infrai is called with one key from the environment, and the same small HTTP client handles onboarding and session calls.
 
 ## The runnable path
 
@@ -29,7 +29,7 @@ The first command is deterministic and should print `activeSessionDecision keeps
 
 ## Before you deploy: Session Inventory SaaS Typescript
 
-The code stays simple on purpose — here's what to set up before going live: The details below apply to Session Inventory SaaS Typescript.
+The code stays simple on purpose. Here's what to set up before going live: The details below apply to Session Inventory SaaS Typescript.
 
 **Account & key**
 
